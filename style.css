@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+/* En-tête */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* Sections générales */
+section {
+    padding: 30px 40px;
+    border-bottom: 1px solid #eee;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    border-left: 5px solid #667eea;
+    padding-left: 15px;
+}
+
+section h3 {
+    color: #555;
+    margin: 20px 0 10px 0;
+}
+
+section p {
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+section ul, section ol {
+    margin-left: 25px;
+    margin-bottom: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+section li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formulaire article */
+#articleForm {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: #667eea;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #5a67d8;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: #48bb78;
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-secondary:hover {
+    background: #38a169;
+}
+
+/* Section recherche */
+.search-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#searchQuery {
+    margin-bottom: 15px;
+}
+
+/* Liste des articles */
+.articles-list {
+    margin-top: 20px;
+}
+
+.article {
+    background: #f8f9fa;
+    border-left: 4px solid #667eea;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.article:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.article h3 {
+    color: #333;
+    margin: 0 0 10px 0;
+    font-size: 1.3em;
+}
+
+.article p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.article strong {
+    color: #333;
+}
+
+.article button {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 8px 16px;
+    font-size: 13px;
+}
+
+.article button:first-of-type {
+    background: #48bb78;
+}
+
+.article button:first-of-type:hover {
+    background: #38a169;
+}
+
+.article button:last-of-type {
+    background: #f56565;
+}
+
+.article button:last-of-type:hover {
+    background: #e53e3e;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+    
+    header {
+        padding: 20px;
+    }
+    
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .btn-secondary {
+        margin-right: 0;
+    }
+}
