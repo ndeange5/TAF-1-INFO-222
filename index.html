@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog CleeRoute - Mon apprentissage du développement web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- En-tête -->
+        <header>
+            <h1>📝 Blog CleeRoute</h1>
+            <p class="subtitle">Mon parcours d'apprentissage du développement web</p>
+        </header>
+
+        <!-- Section présentation personnelle -->
+        <section class="intro">
+            <h2>👋 Qui suis-je ?</h2>
+            <p>Je suis étudiant en 2ème année informatique, passionné par le développement web, les réseaux et l'intelligence artificielle. Ce blog retrace mon apprentissage et mes découvertes.</p>
+        </section>
+
+        <!-- Section Qu'est-ce que le web -->
+        <section class="concept">
+            <h2>🌐 Qu'est-ce que le web ?</h2>
+            <p>Le web (World Wide Web) est un système hypertexte public fonctionnant sur Internet. Il permet de consulter des pages reliées par des liens hypertextes.</p>
+            <h3>Principes de fonctionnement</h3>
+            <ul>
+                <li><strong>Client-Serveur</strong> : le navigateur (client) envoie des requêtes HTTP à un serveur qui renvoie les ressources.</li>
+                <li><strong>HTTP/HTTPS</strong> : protocole de communication entre le client et le serveur.</li>
+                <li><strong>URL</strong> : adresse unique pour localiser une ressource.</li>
+            </ul>
+        </section>
+
+        <!-- Section Langages de base -->
+        <section class="languages">
+            <h2>💻 Langages de base</h2>
+            <ul>
+                <li><strong>HTML</strong> : structure et contenu de la page</li>
+                <li><strong>CSS</strong> : mise en forme et style visuel</li>
+                <li><strong>JavaScript</strong> : interactivité et dynamisme</li>
+                <li><strong>Frameworks</strong> : React, Vue, Angular pour des applications plus complexes</li>
+            </ul>
+        </section>
+
+        <!-- Section Objectifs d'apprentissage -->
+        <section class="objectifs">
+            <h2>🎯 Mes objectifs d'apprentissage</h2>
+            <ul>
+                <li>Maîtriser le développement backend avec Node.js et Express</li>
+                <li>Créer des APIs RESTful complètes</li>
+                <li>Apprendre les bases de données (SQLite, PostgreSQL)</li>
+                <li>Développer des applications full-stack</li>
+                <li>Comprendre la cybersécurité web (tryhackme)</li>
+            </ul>
+        </section>
+
+        <!-- Section Technologies à apprendre -->
+        <section class="technologies">
+            <h2>🚀 Technologies que je souhaite apprendre</h2>
+            <ul>
+                <li>Node.js / Express</li>
+                <li>React.js</li>
+                <li>Python / Flask</li>
+                <li>MongoDB</li>
+                <li>Docker</li>
+                <li>TypeScript</li>
+            </ul>
+        </section>
+
+        <!-- Section Structurer sa formation avec CleeRoute -->
+        <section class="cleeroute">
+            <h2>📚 Comment structurer sa formation avec CleeRoute</h2>
+            <p>CleeRoute est un outil qui génère un parcours d'apprentissage personnalisé. Voici comment je l'utilise :</p>
+            <ol>
+                <li>Définir son niveau et ses objectifs</li>
+                <li>Générer un parcours adapté</li>
+                <li>Suivre les modules étape par étape</li>
+                <li>Prendre des notes et ajouter ses propres ressources</li>
+                <li>Faire les quiz pour valider ses connaissances</li>
+            </ol>
+            <p>Quelques ressources utiles :</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/fr/" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://www.youtube.com/@OpenClassrooms" target="_blank">OpenClassrooms YouTube</a></li>
+                <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+            </ul>
+        </section>
+
+        <!-- Section Outils utilisés -->
+        <section class="outils">
+            <h2>🛠️ Outils utilisés</h2>
+            <ul>
+                <li><strong>Éditeur de code</strong> : Visual Studio Code</li>
+                <li><strong>Navigateur</strong> : Google Chrome / Firefox</li>
+                <li><strong>Terminal</strong> : Ubuntu (WSL)</li>
+                <li><strong>API Testing</strong> : curl, Swagger UI</li>
+                <li><strong>Versionnement</strong> : Git / GitHub</li>
+            </ul>
+        </section>
+
+        <!-- SECTION API BLOG - Gestion des articles -->
+        <section class="blog-section">
+            <h2>📝 Gestion des articles de blog</h2>
+            
+            <!-- Formulaire création article -->
+            <h3>➕ Créer un article</h3>
+            <form id="articleForm">
+                <input type="text" id="title" placeholder="Titre" required>
+                <input type="text" id="author" placeholder="Auteur" required>
+                <input type="text" id="category" placeholder="Catégorie">
+                <input type="text" id="tags" placeholder="Tags (séparés par virgules)">
+                <textarea id="content" placeholder="Contenu" rows="5" required></textarea>
+                <button type="submit" class="btn-primary">Publier l'article</button>
+            </form>
+
+            <!-- Recherche -->
+            <div class="search-section">
+                <h3>🔍 Rechercher un article</h3>
+                <input type="text" id="searchQuery" placeholder="Tapez un mot-clé (titre ou contenu)">
+                <button id="searchBtn" class="btn-secondary">Rechercher</button>
+                <button id="resetSearchBtn" class="btn-secondary">Afficher tous</button>
+            </div>
+
+            <!-- Liste des articles -->
+            <h3>📖 Articles publiés</h3>
+            <div id="articlesList" class="articles-list"></div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="conclusion">
+            <h2>🎓 Conclusion</h2>
+            <p>Le développement web est un domaine vaste et passionnant. Mon objectif est de construire des bases solides en comprenant les concepts fondamentaux avant de me spécialiser. CleeRoute m'aide à structurer cet apprentissage, et ce projet d'API blog me permet de mettre en pratique tout ce que j'apprends.</p>
+            <p><em>"Apprendre en faisant, comprendre en pratiquant."</em></p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 - Projet INF222 - Blog CleeRoute</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
